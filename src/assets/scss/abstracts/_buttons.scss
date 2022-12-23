@@ -1,0 +1,23 @@
+
+
+// detractor button
+.detractor{
+    margin: auto;
+    background-size: 1rem;
+    background-repeat: no-repeat;
+      appearance: none;
+  -webkit-appearance: none;
+            // specify the custom image for the normal state
+        background-image: url('../../../images/0button.png');
+    
+        // specify the custom image for the hover state
+        :hover{
+            background-image: url('../../../images/0buttonHover.png');
+        }
+    
+        // specify the custom image for the clicked state
+        :active{
+          background-image: url('../../../images/0buttonClicked.png');
+        }
+
+}

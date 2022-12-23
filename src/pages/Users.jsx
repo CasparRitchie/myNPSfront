@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Header from '../components/Header';
 
 const Users = () => {
@@ -21,6 +22,7 @@ const Users = () => {
             {usersFromApi.map((user) => {
                 return (
                     <article>
+                        <Link to={"/users/" + user.id}>View user details</Link>
                         <p>{user.id}</p>
                         <p>{user.first_name}</p>
                         <p>{user.last_name}</p>

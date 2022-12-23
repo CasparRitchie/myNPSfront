@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Header from "../components/Header";
 
 const Surveys = () => {
@@ -19,8 +20,8 @@ const Surveys = () => {
            {surveysFromApi.map((survey) => {
             return (
                 <article>
-                    <p>Survey ID : {survey.id}</p>
-                    <p>User ID : {survey.userID}</p>
+                    <Link to={"/surveys/" + survey.id}>View more details</Link>
+
                     <p>Score : {survey.score}</p>
                     <p>Comment : {survey.comment}</p>
                 </article>
