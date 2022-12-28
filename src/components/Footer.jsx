@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
 
-const Header = () => {
+const Footer = () => {
     return(
         <footer>          
             <nav>
-                <h1>myNPS</h1>
                 <ul>
+                <h1>myNPS</h1>
                     <li>Contact us</li>
                 <li>
                     <Link to="/">back</Link>
@@ -15,4 +15,4 @@ const Header = () => {
         </footer>
     )
 }
-export default Header
+export default Footer

@@ -1,0 +1,15 @@
+
+
+.myNPSintro{
+    width: auto;
+    display: flex;
+    box-sizing: border-box;
+    border: 2px solid red;
+    margin: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+            // specify the custom image
+    background-image: url('../../../images/happyhands.png');
+}

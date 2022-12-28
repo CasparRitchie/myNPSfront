@@ -25,7 +25,7 @@ function Navbar() {
         <FaBars/>
       </button>
     </header>
-  );
+  )
 }
 
-export default Navbar;
+export default Navbar

@@ -1,6 +1,7 @@
 import Header from '../components/Header';
 import { useRef } from 'react';
 import DetractorButton from '../functions/DetractorButton';
+import ButtonsNPS from '../components/ButtonsNPS';
 
 
 const CreateSurvey = () => {
@@ -40,26 +41,29 @@ const CreateSurvey = () => {
         <Header/>
         <div>
           <h2> Submit a survey </h2>
-
+{/* WORKING ON ADDING RADIO BUTTONS */}
+{/* <ButtonsNPS/> */}
           
           {/* Render a form element with an onSubmit attribute that references the handleSubmit function */}
           <form onSubmit={handleSubmit}>
                 {/* Render a series of radio buttons for selecting an NPS score */}
-<DetractorButton />
+                <DetractorButton ref={npsScoreRef} value="0"/>
+                <>
                 <input type="radio" id="score0" name="nps_score" value="0" ref={npsScoreRef} className="detractor"/>
                 <label className='detractor' htmlFor="score0">0</label>
+                </>
                 <input type="radio" id="score1" name="nps_score" value="1" ref={npsScoreRef}/>
-                <label htmlFor="score1">1</label>
+                <label className='detractor' htmlFor="score1">1</label>
                 <input type="radio" id="score2" name="nps_score" value="2" ref={npsScoreRef}/>
-                <label htmlFor="score2">2</label>
+                <label className='detractor' htmlFor="score2">2</label>
                 <input type="radio" id="score3" name="nps_score" value="3" ref={npsScoreRef}/>
-                <label htmlFor="score3">3</label>
+                <label className='detractor' htmlFor="score3">3</label>
                 <input type="radio" id="score4" name="nps_score" value="4" ref={npsScoreRef}/>
-                <label htmlFor="score4">4</label>
+                <label className='detractor' htmlFor="score4">4</label>
                 <input type="radio" id="score5" name="nps_score" value="5" ref={npsScoreRef}/>
-                <label htmlFor="score5">5</label>
+                <label className='detractor' htmlFor="score5">5</label>
                 <input type="radio" id="score6" name="nps_score" value="6" ref={npsScoreRef}/>
-                <label htmlFor="score6">6</label>
+                <label className='detractor' htmlFor="score6">6</label>
                 <input type="radio" id="score7" name="nps_score" value="7" ref={npsScoreRef}/>
                 <label htmlFor="score7">7</label>
                 <input type="radio" id="score8" name="nps_score" value="8" ref={npsScoreRef}/>
