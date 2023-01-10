@@ -1,0 +1,19 @@
+.howThisSiteWorks{
+    margin: 0;
+}
+li{
+    text-align: center;
+    list-style: none;
+    padding: 10px 0px;
+}
+
+li:nth-child(odd) {
+   background-color: #f5f5f5;
+}
+
+li:nth-child(even) {
+   background-color: #ffffff;
+}
+li>img{
+max-height: 25vh;
+object-fit: scale-down;}

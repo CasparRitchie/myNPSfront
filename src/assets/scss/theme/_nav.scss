@@ -1,26 +1,36 @@
+// Balise header affichant les éléments en ligne et centrés verticalement
 header{
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     height: 50px;
-    padding: 0 2rem;
+    padding: 0 1rem;
+    // Couleur de fond de la barre de navigation
     background-color: var(--mainColor);
+    // Couleur du texte de la barre de navigation
     color: var(--textColor);
-
-}
-
-nav a{
+    }
+    
+    // Image de la barre de navigation avec une hauteur de 20px
+    nav > img{
+    height: 20px;
+    margin: auto;
+    }
+    
+    // Liens de la barre de navigation avec une marge de 2rem
+    nav a{
     margin: 0 2rem;
     color: var(--textColor);
     text-decoration: none;
-
-}
-
-nav a:hover{
+    }
+    
+    // Couleur des liens de la barre de navigation au hover
+    nav a:hover{
     color: var(--secondaryTextBackground);
-}
-
-header .nav-btn{
+    }
+    
+    // Bouton de la barre de navigation caché par défaut
+    header .nav-btn{
     padding: 5px;
     cursor: pointer;
     background: transparent;
@@ -29,37 +39,42 @@ header .nav-btn{
     color: var(--textColor);
     visibility: hidden;
     opacity: 0;
-}
-
-@media only screen and (max-width: 768px){
+    }
+    
+    // Afficher le bouton de la barre de navigation et le rendre visible seulement sur les écrans de moins de 768px de large
+    @media only screen and (max-width: 768px){
     header .nav-btn {
-        visibility: visible;
-        opacity: 1;
+    visibility: visible;
+    opacity: 1;
     }
-
+    
+    // Barre de navigation en position fixe en haut de l'écran avec une hauteur de 100%, une largeur de 100% et un fond de couleur
     header nav{
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        display:grid;
-        align-items: center;
-        justify-content: space-evenly;
-        gap: 1.3rem;
-        background-color: var(--mainColor);
-        transition: 0.25s;
-        transform: translateY(-100vh);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1.3rem;
+    background-color: var(--mainColor);
+    transition: 0.25s;
+    // Masquer la barre de navigation en dehors de l'écran
+    transform: translateY(-100vh);
     }
-
+    
+    // Afficher la barre de navigation en position fixe en haut de l'écran
     header .responsive_nav{
-        transform: none;
-        text-align: center;
+    transform: none;
+    text-align: center;
     }
-
+    
+    // Bouton de fermeture de la barre de navigation en position absolue en haut à droite de l'écran
     nav .nav-close-btn{
-        position: absolute;
-        top: 2rem;
-        right: 2rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
     }
-}
+    }

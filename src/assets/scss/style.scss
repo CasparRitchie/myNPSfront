@@ -3,9 +3,14 @@
 @import "/src/assets/scss/abstracts/fonts";
 @import "/src/assets/scss/abstracts/variables";
 @import "/src/assets/scss/abstracts/buttons";
+@import "/src/assets/scss/abstracts/homePageCarousel.scss";
+@import "/src/assets/scss/abstracts/whatIsNPS.scss";
+@import "src/assets/scss/abstracts/whatAreOtherPeopleSaying.scss";
+@import "src/assets/scss/abstracts/howThisSiteWorks.scss";
 
 // Themes et pages et la base css
 @import "/src/assets/scss/theme/base";
 @import "/src/assets/scss/theme/nav";
 @import "/src/assets/scss/theme/footer";
-@import "/src/assets/scss/theme/myNPSintro"
+@import "/src/assets/scss/theme/myNPSintro";
+@import "/src/assets/scss/theme/survey";

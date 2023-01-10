@@ -1,6 +1,8 @@
 import {FaBars, FaTimes} from "react-icons/fa";
 import {useRef} from "react";
 import { Link } from 'react-router-dom';
+import new_mnNPS_logo_contrast_c from '../images//new_mnNPS_logo_contrast_c.png';
+
 
 function Navbar() {
   const navRef = useRef();
@@ -13,10 +15,12 @@ function Navbar() {
     <header>
       <nav ref={navRef}>
 
-        <a href="/">Home</a>
+      <Link to="/">
+    <img src={new_mnNPS_logo_contrast_c} alt="myNPS" className="contrastLogo" style={{ width: '80px', }} />
+  </Link>
         <a href="/surveys/ShowChart/">View charts</a>
         <Link to="/surveys/create">Submit a survey</Link>
-        <Link to="/surveys">View a list of surveys</Link>
+        <Link to="/surveys">View surveys</Link>
         <button  className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FaTimes/>
         </button>

@@ -1,7 +1,7 @@
 footer{
     background-color: var(--mainColor);
     color: var(--textColor);
-
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -12,12 +12,11 @@ footer{
         display:flex;
         list-style-type: none;
 align-items: flex-end;
-li{
+    li{
         border: 2px solid red;
-        
-            :hover{
-                color: var(--secondaryTextBackground);
-            }
+    }
+        :hover{
+        color: var(--secondaryTextBackground);
         }
     }
     

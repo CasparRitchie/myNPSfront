@@ -5,19 +5,49 @@
     margin: auto;
     background-size: 1rem;
     background-repeat: no-repeat;
-      appearance: none;
-  -webkit-appearance: none;
-            // specify the custom image for the normal state
-        background-image: url('../../../images/0button.png');
-    
-        // specify the custom image for the hover state
-        :hover{
-            background-image: url('../../../images/0buttonHover.png');
-        }
-    
-        // specify the custom image for the clicked state
+    appearance: none;
+    -webkit-appearance: none;
+    // definir l'image pour l'état défaut 
+    background-image: url('../../../images/0button.png');    
+    // definir l'image pour l'état survol 
+    :hover{
+    background-image: url('../../../images/0buttonHover.png');
+    }
+        // definir l'image pour l'etat déclenché 
         :active{
           background-image: url('../../../images/0buttonClicked.png');
         }
-
+      }
+// --backgroundColor: #520CB1;
+// --mainColor: #520CB1;
+// --mainColorLight: #6f1ae6;
+// --secondaryColor: #595959;
+// --textColor: #FFFFFF;
+// --secondaryTextBackground: #FFB450;
+// --secondaryTextColor: black;
+.submitSurvey {
+  background-color: var(--mainColor);  border: none;
+  color: white;
+  padding: 3px 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+}
+.submitSurvey1 {
+  width: 180px;
+  background-color: white; 
+  color: var(--mainColor); 
+  border: 2px solid var(--mainColor);
+  
+}
+.submitSurvey1:hover {
+  background-color: var(--secondaryTextBackground);
+  color: var(--secondaryTextColor);
+  border: 2px solid var(--secondaryColor);
 }
