@@ -57,8 +57,10 @@ const CreateSurvey = () => {
                 <form onSubmit={handleSubmit}>
                     {/* Render a series of radio buttons for selecting an NPS score */}
                     {/* <DetractorButton ref={npsScoreRef} value="0"/> */}
+                    <label className='container' htmlFor="score0">
                     <input type="radio" id="score0" name="nps_score" value={0} ref={npsScoreRef} className="detractor"/>
-                    <label className='detractor' htmlFor="score0">0</label>
+                    <span class="checkmark"></span>
+                    </label>
                     <input type="radio" id="score1" name="nps_score" value={1} ref={npsScoreRef}/>
                     <label className='detractor' htmlFor="score1">1</label>
                     <input type="radio" id="score2" name="nps_score" value={2} ref={npsScoreRef}/>
@@ -82,14 +84,15 @@ const CreateSurvey = () => {
                     {/* Render a label and text input element for entering a comment */}
                     <label htmlFor="comment"> Comments </label>
                     <input type="text" name="comment" ref={commentRef} />                       
+                    <button type="submit" className='submitSurvey'>Submit survey</button>
+                    {/* <SubmitASurveyButton/> */}
                   </form>
         </section>
 
             </li>
-            <>
-                    <SubmitASurveyButton/>
-                </>
-                    {/* <button type="submit" className='submitSurvey'>Submit survey</button> */}
+              <>
+  
+              </>
           </ul>
           </section>
                         <Footer />
