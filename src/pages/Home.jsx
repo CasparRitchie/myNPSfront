@@ -8,13 +8,12 @@ import CarouselImage2 from '../images/carousel_images/pexels-shvets-production-7
 import CarouselImage3 from '../images/carousel_images/pexels-eren-li-7168996@2x.png';
 import HomePageCarousel from "../components/HomePageCarousel";
 import SubmitASurveyButton from "../functions/SubmitSurvey";
-import Loginpan from "./Login";
+
 
 const Home = () => {
     return(
         <div>
             <Header />
-            <Loginpan/>
             <>
                 <section className="myNPSintro">
                     <ul>
@@ -29,19 +28,23 @@ const Home = () => {
                     </ul>
                 </section>
             </>
+            <ul>
+                <li>
             <section className="whatIsNPS">
+                <>
+                    <h2> What is <span className="mynpsMy">my</span><span className="mynpsN">n</span ><span className="mynpsP">p</span><span className="mynpsS">s</span>? </h2> 
+                    <p> The basic formula for a Net Promoter Score is easy to understand, hence its popularity and widespread use. If a company has more detractors than promoters, the score will be negative and vice versa. A Net Promoter Score provides companies with a simple and direct indicator that can be shared with front-line employees. This practical tool can serve as a motivator for employees and encourage them to improve and provide the best possible customer experience.
                 <>
                     <SubmitASurveyButton/>
                 </>
-                <>
-                    <h2> What is Net Promoter Score? </h2> 
-                    <p> The basic formula for a Net Promoter Score is easy to understand, hence its popularity and widespread use. If a company has more detractors than promoters, the score will be negative and vice versa. A Net Promoter Score provides companies with a simple and direct indicator that can be shared with front-line employees. This practical tool can serve as a motivator for employees and encourage them to improve and provide the best possible customer experience.
                     </p> 
                 </>
             </section>
+            </li>
+            </ul>
             <ul>
                 <li>
-                <HomePageCarousel className="carousel-inner" role="listbox" style=" width:100%; height: 500px !important;"/>
+                <HomePageCarousel className="carousel-inner" role="listbox" style=" width:100% !important;"/>
                 </li>
                 <li>
                     <Link to="/surveys">View a list of surveys</Link>
@@ -52,12 +55,15 @@ const Home = () => {
                 <li>
                 <SubmitASurveyButton/>
                 </li>
+                <li>
                     <section className="whatAreOtherPeopleSaying">
-                        <h2>What are other people saying?</h2>
+                        <h2>What are other people saying?
+                        </h2>
                         <p>
                         Information about the score, what it means and how it can be improved 
                         </p>
                     </section>
+                </li>
                 <li>
                     <Link to="/users">View current users</Link>
                 </li>
@@ -105,11 +111,13 @@ const Home = () => {
                     </ul>
                 </section>
                 
+                <>
+                    <SubmitASurveyButton/>
+                </>
                 <li>
                     <Link to="/surveys/ShowChart">View charts</Link>
                 </li>
                 <li>
-
                 </li>
                 {/* <li> */}
                     {/* <Link to="/surveys/ShowChartData">Get data for charts (under construction)</Link> */}

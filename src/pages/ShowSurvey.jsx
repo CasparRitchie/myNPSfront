@@ -19,7 +19,7 @@ const ShowSurvey = () => {
     return(
         <>
             <Header/>
-            <h2> View a survey </h2>
+            <h2> Survey info </h2>
             <div>
                 <article>
                     <p>Survey ID : {survey.id}</p>

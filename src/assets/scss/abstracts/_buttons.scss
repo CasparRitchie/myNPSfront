@@ -1,23 +1,4 @@
 
-
-// detractor button
-.detractor{
-    margin: auto;
-    background-size: 1rem;
-    background-repeat: no-repeat;
-    appearance: none;
-    -webkit-appearance: none;
-    // definir l'image pour l'état défaut 
-    background-image: url('../../../images/0button.png');    
-    // definir l'image pour l'état survol 
-    :hover{
-    background-image: url('../../../images/0buttonHover.png');
-    }
-        // definir l'image pour l'etat déclenché 
-        :active{
-          background-image: url('../../../images/0buttonClicked.png');
-        }
-      }
 // --backgroundColor: #520CB1;
 // --mainColor: #520CB1;
 // --mainColorLight: #6f1ae6;
@@ -26,18 +7,28 @@
 // --secondaryTextBackground: #FFB450;
 // --secondaryTextColor: black;
 .submitSurvey {
-  background-color: var(--mainColor);  border: none;
-  color: white;
+  // background-color: var(--mainColor);  border: none;
+  // color: white;
   padding: 3px 3px;
-  text-align: center;
-  text-decoration: none;
+  // text-align: center;
+  // text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  // font-size: 16px;
   margin: 4px 2px;
   transition-duration: 0.4s;
-  cursor: pointer;
+  // cursor: pointer;
   position: absolute;
   right: 10px;
+
+  width: 180px;
+  background-color: white; 
+  color: var(--mainColor); 
+  border: 2px solid var(--mainColor);
+}
+.submitSurvey:hover {
+  background-color: var(--secondaryTextBackground);
+  color: var(--secondaryTextColor);
+  border: 2px solid var(--secondaryColor);
 }
 .submitSurvey1 {
   width: 180px;
@@ -52,9 +43,11 @@
   border: 2px solid var(--secondaryColor);
 }
 
+// Detractor 0 score
+
 /* The container */
 .container {
-  display: flex;
+  display: inline-flex;
   position: relative;
   padding-left: 35px;
   margin-bottom: 12px;
@@ -74,49 +67,304 @@
 }
 
 /* New NPS button styles 20230112*/
-/* Create a custom radio button */
-.checkmark {
+/* Create a custom radio button for 0 score*/
+.checkmark0 {
   position: absolute;
   top: 0;
   left: 0;
   height: 25px;
   width: 25px;
-  background-image: url('../../../images/0button.png');
+  background-image: url('../../../images/npsButtons/0\ button.png');
   background-size: cover;
-  background-color: #eee;
-  // border-radius: 50%;
 }
 
-/* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
-  // background-color: #ccc;
-  background-image: url('../../../images/0buttonHover.png');
+/* On mouse-over, change the image background  */
+.container:hover input ~ .checkmark0 {
+  background-image: url('../../../images/npsButtons/0\ button\ \(État\ de\ survol\).png');
 }
 
-/* When the radio button is checked, add a blue background */
-.container input:checked ~ .checkmark {
-  // background-color: #2196F3;
-  background-image: url('../../../images/0buttonClicked.png')
+/* When the radio button is checked, change the image background */
+.container input:checked ~ .checkmark0 {
+  background-image: url('../../../images/npsButtons/0\ button\ \(État\ de\ bascule\).png')
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
-.checkmark:after {
+.checkmark0:after {
   content: "";
   position: absolute;
   display: none;
 }
-
-/* Show the indicator (dot/circle) when checked */
-.container input:checked ~ .checkmark:after {
-  // display: block;
+/* Create a custom radio button for 1 score*/
+.checkmark1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-image: url('../../../images/npsButtons/1\ button.png');
+  background-size: cover;
+  // border-radius: 50%;
 }
 
-/* Style the indicator (dot/circle) */
-.container .checkmark:after {
- 	top: 9px;
-	left: 9px;
-	width: 8px;
-	height: 8px;
-	border-radius: 50%;
-	background: white;
+/* On mouse-over, change the image background  */
+.container:hover input ~ .checkmark1 {
+  // background-color: #ccc;
+  background-image: url('../../../images/npsButtons/1\ button\ \(État\ de\ survol\).png');
+}
+
+/* When the radio button is checked, change the image background */
+.container input:checked ~ .checkmark1 {
+  // background-color: #2196F3;
+  background-image: url('../../../images/npsButtons/1\ button\ \(État\ de\ bascule\).png')
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark1:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* Create a custom radio button for 2 score*/
+.checkmark2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-image: url('../../../images/npsButtons/2\ button.png');
+  background-size: cover;
+}
+
+/* On mouse-over, change the image background  */
+.container:hover input ~ .checkmark2 {
+  background-image: url('../../../images/npsButtons/2\ button\ \(État\ de\ survol\).png');
+}
+
+/* When the radio button is checked, change the image background */
+.container input:checked ~ .checkmark2 {
+  background-image: url('../../../images/npsButtons/2\ button\ \(État\ de\ bascule\).png')
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark2:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* Create a custom radio button for 3 score*/
+.checkmark3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-image: url('../../../images/npsButtons/3\ button.png');
+  background-size: cover;
+}
+
+/* On mouse-over, change the image background  */
+.container:hover input ~ .checkmark3 {
+  background-image: url('../../../images/npsButtons/3\ button\ \(État\ de\ survol\).png');
+}
+
+/* When the radio button is checked, change the image background */
+.container input:checked ~ .checkmark3 {
+  background-image: url('../../../images/npsButtons/3\ button\ \(État\ de\ bascule\).png')
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark3:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* Create a custom radio button for 4 score*/
+.checkmark4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-image: url('../../../images/npsButtons/4\ button.png');
+  background-size: cover;
+}
+
+/* On mouse-over, change the image background  */
+.container:hover input ~ .checkmark4 {
+  background-image: url('../../../images/npsButtons/4\ button\ \(État\ de\ survol\).png');
+}
+
+/* When the radio button is checked, change the image background */
+.container input:checked ~ .checkmark4 {
+  background-image: url('../../../images/npsButtons/4\ button\ \(État\ de\ bascule\).png')
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark4:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* Create a custom radio button for 5 score*/
+.checkmark5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-image: url('../../../images/npsButtons/5\ button.png');
+  background-size: cover;
+}
+
+/* On mouse-over, change the image background  */
+.container:hover input ~ .checkmark5 {
+  background-image: url('../../../images/npsButtons/5\ button\ \(État\ de\ survol\).png');
+}
+
+/* When the radio button is checked, change the image background */
+.container input:checked ~ .checkmark5 {
+  background-image: url('../../../images/npsButtons/5\ button\ \(État\ de\ bascule\).png')
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark5:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* Create a custom radio button for 6 score*/
+.checkmark6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-image: url('../../../images/npsButtons/6\ button.png');
+  background-size: cover;
+
+}
+
+/* On mouse-over, change the image background  */
+.container:hover input ~ .checkmark6 {
+  background-image: url('../../../images/npsButtons/6\ button\ \(État\ de\ survol\).png');
+}
+
+/* When the radio button is checked, change the image background */
+.container input:checked ~ .checkmark6 {
+  background-image: url('../../../images/npsButtons/6\ button\ \(État\ de\ bascule\).png')
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark6:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* Create a custom radio button for 7 score*/
+.checkmark7 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-image: url('../../../images/npsButtons/7\ button.png');
+  background-size: cover;
+}
+
+/* On mouse-over, change the image background  */
+.container:hover input ~ .checkmark7 {
+  background-image: url('../../../images/npsButtons/7\ button\ \(État\ de\ survol\).png');
+}
+
+/* When the radio button is checked, change the image background */
+.container input:checked ~ .checkmark7 {
+  background-image: url('../../../images/npsButtons/7\ button\ \(État\ de\ bascule\).png')
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark7:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* Create a custom radio button for 8 score*/
+.checkmark8 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-image: url('../../../images/npsButtons/8\ button.png');
+  background-size: cover;
+}
+
+/* On mouse-over, change the image background  */
+.container:hover input ~ .checkmark8 {
+  background-image: url('../../../images/npsButtons/8\ button\ \(État\ de\ survol\).png');
+}
+
+/* When the radio button is checked, change the image background */
+.container input:checked ~ .checkmark8 {
+  background-image: url('../../../images/npsButtons/8\ button\ \(État\ de\ bascule\).png')
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark8:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* Create a custom radio button for 9 score*/
+.checkmark9 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-image: url('../../../images/npsButtons/9\ button.png');
+  background-size: cover;
+}
+
+/* On mouse-over, change the image background  */
+.container:hover input ~ .checkmark9 {
+  background-image: url('../../../images/npsButtons/9\ button\ \(État\ de\ survol\).png');
+}
+
+/* When the radio button is checked, change the image background */
+.container input:checked ~ .checkmark9 {
+  background-image: url('../../../images/npsButtons/9\ button\ \(État\ de\ bascule\).png')
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark9:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* Create a custom radio button for 10 score*/
+.checkmark10 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-image: url('../../../images/npsButtons/10\ button.png');
+  background-size: cover;
+}
+
+/* On mouse-over, change the image background  */
+.container:hover input ~ .checkmark10 {
+  background-image: url('../../../images/npsButtons/10\ button\ \(État\ de\ survol\).png');
+}
+
+/* When the radio button is checked, change the image background */
+.container input:checked ~ .checkmark10 {
+  background-image: url('../../../images/npsButtons/10\ button\ \(État\ de\ bascule\).png')
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark10:after {
+  content: "";
+  position: absolute;
+  display: none;
 }

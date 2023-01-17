@@ -1,5 +1,7 @@
 .carouselItem {
-object-fit: cover;}
+  object-fit: cover;
+
+}
 .captionText{
   background-color: rgba(255, 255, 255, 0.2);
 
@@ -8,7 +10,7 @@ object-fit: cover;}
   max-height: 60vh;
   object-fit: cover;
   align-content: top;
-  // top: 25%;
+  top: 25%;
 }
 
 /* Show 3 items on desktop */

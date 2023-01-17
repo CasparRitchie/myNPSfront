@@ -50,49 +50,64 @@ const CreateSurvey = () => {
             <h2> Submit a survey </h2>
           <ul>
             <li>
-{/* WORKING ON ADDING RADIO BUTTONS */}
-{/* <ButtonsNPS/> */}
+          {/* <ButtonsNPS/> */}
               <section>
           {/* Render a form element with an onSubmit attribute that references the handleSubmit function */}
-                <form onSubmit={handleSubmit}>
+                <form className='submitSurveyForm' onSubmit={handleSubmit}>
                     {/* Render a series of radio buttons for selecting an NPS score */}
                     {/* <DetractorButton ref={npsScoreRef} value="0"/> */}
                     <label className='container' htmlFor="score0">
-                    <input type="radio" id="score0" name="nps_score" value={0} ref={npsScoreRef} className="detractor"/>
-                    <span class="checkmark"></span>
+                      <input type="radio" id="score0" name="nps_score" value={0} ref={npsScoreRef} className="detractor"/>
+                      <span className="checkmark0"></span>
                     </label>
-                    <input type="radio" id="score1" name="nps_score" value={1} ref={npsScoreRef}/>
-                    <label className='detractor' htmlFor="score1">1</label>
-                    <input type="radio" id="score2" name="nps_score" value={2} ref={npsScoreRef}/>
-                    <label className='detractor' htmlFor="score2">2</label>
-                    <input type="radio" id="score3" name="nps_score" value={3} ref={npsScoreRef}/>
-                    <label className='detractor' htmlFor="score3">3</label>
-                    <input type="radio" id="score4" name="nps_score" value={4} ref={npsScoreRef}/>
-                    <label className='detractor' htmlFor="score4">4</label>
-                    <input type="radio" id="score5" name="nps_score" value={5} ref={npsScoreRef}/>
-                    <label className='detractor' htmlFor="score5">5</label>
-                    <input type="radio" id="score6" name="nps_score" value={6} ref={npsScoreRef}/>
-                    <label className='detractor' htmlFor="score6">6</label>
-                    <input type="radio" id="score7" name="nps_score" value={7} ref={npsScoreRef}/>
-                    <label htmlFor="score7">7</label>
-                    <input type="radio" id="score8" name="nps_score" value={8} ref={npsScoreRef}/>
-                    <label htmlFor="score8">8</label>
-                    <input type="radio" id="score9" name="nps_score" value={9} ref={npsScoreRef}/>
-                    <label htmlFor="score9">9</label>
-                    <input type="radio" id="score10" name="nps_score" value={10} ref={npsScoreRef}/>
-                    <label htmlFor="score10">10</label>
+                    <label className='container' htmlFor="score1">
+                      <input type="radio" id="score1" name="nps_score" value={1} ref={npsScoreRef} className="detractor1"/>
+                      <span className="checkmark1"></span>
+                    </label>
+                    <label className='container' htmlFor="score2">
+                      <input type="radio" id="score2" name="nps_score" value={2} ref={npsScoreRef} className="detractor2"/>
+                      <span class="checkmark2"></span>
+                    </label>
+                    <label className='container' htmlFor="score3">
+                      <input type="radio" id="score3" name="nps_score" value={3} ref={npsScoreRef} className="detractor3"/>
+                      <span class="checkmark3"></span>
+                    </label>
+                    <label className='container' htmlFor="score4">
+                      <input type="radio" id="score4" name="nps_score" value={4} ref={npsScoreRef} className="detractor4"/>
+                      <span class="checkmark4"></span>
+                    </label>
+                    <label className='container' htmlFor="score5">
+                      <input type="radio" id="score5" name="nps_score" value={5} ref={npsScoreRef} className="detractor5"/>
+                      <span class="checkmark5"></span>
+                    </label>
+                    <label className='container' htmlFor="score6">
+                      <input type="radio" id="score6" name="nps_score" value={6} ref={npsScoreRef} className="detractor6"/>
+                      <span class="checkmark6"></span>
+                    </label>
+                    <label className='container' htmlFor="score7">
+                      <input type="radio" id="score7" name="nps_score" value={7} ref={npsScoreRef} className="detractor7"/>
+                      <span class="checkmark7"></span>
+                    </label>
+                    <label className='container' htmlFor="score8">
+                      <input type="radio" id="score8" name="nps_score" value={8} ref={npsScoreRef} className="detractor8"/>
+                      <span class="checkmark8"></span>
+                    </label>
+                    <label className='container' htmlFor="score9">
+                      <input type="radio" id="score9" name="nps_score" value={9} ref={npsScoreRef} className="detractor9"/>
+                      <span class="checkmark9"></span>
+                    </label>
+                    <label className='container' htmlFor="score10">
+                      <input type="radio" id="score10" name="nps_score" value={10} ref={npsScoreRef} className="detractor10"/>
+                      <span class="checkmark10"></span>
+                    </label>
                     {/* Render a label and text input element for entering a comment */}
                     <label htmlFor="comment"> Comments </label>
-                    <input type="text" name="comment" ref={commentRef} />                       
+                    <input type="textarea" name="comment" ref={commentRef} />                       
                     <button type="submit" className='submitSurvey'>Submit survey</button>
                     {/* <SubmitASurveyButton/> */}
                   </form>
-        </section>
-
+               </section>
             </li>
-              <>
-  
-              </>
           </ul>
           </section>
                         <Footer />

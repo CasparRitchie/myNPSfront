@@ -63,6 +63,7 @@ header{
     transition: 0.25s;
     // Masquer la barre de navigation en dehors de l'écran
     transform: translateY(-100vh);
+    z-index: 99;
     }
     
     // Afficher la barre de navigation en position fixe en haut de l'écran

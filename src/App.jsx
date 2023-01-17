@@ -13,6 +13,7 @@ import ViewUser from './pages/ViewUser';
 import CreateUser from './pages/CreateUser';
 import ShowChart from './pages/ShowChart';
 import ShowChartData from './pages/ShowChartData';
+import Login from './pages/Login';
 
 // Fonction de rendu de l'application
 function App() {
@@ -32,6 +33,7 @@ function App() {
           <Route path="/users" element={<Users />} />
           <Route path="/users/:id" element={<ViewUser />} />
           <Route path="/users/create" element={<CreateUser />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </BrowserRouter>
     </div>
