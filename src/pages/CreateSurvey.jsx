@@ -3,13 +3,16 @@ import { useRef } from 'react';
 import DetractorButton from '../functions/DetractorButton';
 import ButtonsNPS from '../components/ButtonsNPS';
 import Footer from '../components/Footer';
-import SubmitASurveyButton from '../functions/SubmitSurvey';
+
+import { useNavigate } from "react-router";
 
 
 const CreateSurvey = () => {
     // Create references to the form elements
     const npsScoreRef = useRef(null);
     const commentRef = useRef(null);
+    const navigate = useNavigate();
+
   
     // This function is used as the onSubmit handler for the form element
   const handleSubmit = (event) => {
@@ -40,6 +43,8 @@ const CreateSurvey = () => {
     // Clear the form fields by setting the values to an empty string
     npsScoreRef.current.value = null;
     commentRef.current.value = '';
+    navigate('/surveys');
+
   };
   
     return (
