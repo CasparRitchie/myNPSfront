@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const Users = () => {
     
@@ -26,10 +27,10 @@ const Users = () => {
                         <p>{user.id}</p>
                         <p>{user.first_name}</p>
                         <p>{user.last_name}</p>
-                        <p>{user.email}</p>
                     </article>
                 )
             })}
+            <Footer></Footer>
         </div>
     )
 }

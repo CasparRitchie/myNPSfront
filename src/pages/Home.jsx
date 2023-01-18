@@ -64,13 +64,12 @@ const Home = () => {
                     </section>
                 </li>
                 <li>
-                    <Link to="/users">View current users</Link>
+                    <Link to="/users">View all users</Link>
                 </li>
                 <li>
                     <Link to="/users/create">Create a user</Link>
                 </li>
                 <li>
-                    <Link to="/users/:id">View a user</Link>
                 </li>
                 {/* <li>
                     <Link to="/users/:id">Delete a user (admin only under construction)</Link>

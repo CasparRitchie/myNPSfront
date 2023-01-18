@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import LoggedInAs from '../functions/LoggedInAs';
 import new_mnNPS_logo_contrast_c from '../images//new_mnNPS_logo_contrast_c.png';
 
 
@@ -13,6 +14,7 @@ const Footer = () => {
                     <>Contact us</>
                 </ul>
             </nav>
+            <LoggedInAs/>
         </footer>
     )
 }
