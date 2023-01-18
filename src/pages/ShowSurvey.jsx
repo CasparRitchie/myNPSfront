@@ -6,7 +6,7 @@ import Header from "../components/Header";
 
 const ShowSurvey = () => {
     const { id } = useParams();
-    const [survey, setSurvey] = useState([null]);
+    const [survey, setSurvey] = useState({});
 
     useEffect(() => {
       (async () => {
@@ -23,7 +23,7 @@ const ShowSurvey = () => {
             <div>
                 <article>
                     <p>Survey ID : {survey.id}</p>
-                    <p>User ID : {survey.userID}</p>
+                    {/* <p>User ID : {survey.userID}</p> */}
                     <p>Score : {survey.score}</p>
                     <p>Comment : {survey.comment}</p>
                 </article>

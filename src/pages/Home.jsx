@@ -1,7 +1,6 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { Link } from 'react-router-dom';
-import happyhands from '../images/happyhands.png';
 import mynpsContrast from '../images/mynpsContrast.png';
 import CarouselImage1 from '../images/carousel_images/pexels-artem-podrez-5726835@2x.png';
 import CarouselImage2 from '../images/carousel_images/pexels-shvets-production-72042@2x.png';

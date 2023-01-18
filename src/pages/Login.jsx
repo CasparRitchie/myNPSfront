@@ -18,25 +18,27 @@ const Login = () => {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-                // 'Authorization': 'Bearer' + localStorage.getItem("jwt"),
+                'Authorization': 'Bearer' + localStorage.getItem("jwt"),
             },
             body: JSON.stringify({
-            email,
-            password
+            email: email,
+            password: password,
         })
         });
         const jwtResponse = await responseLog.json();
-
-        if (responseLog.status === 200 && jwtResponse.role === 'admin') {
-            localStorage.setItem("jwt", JSON.stringify(jwtResponse));
+        console.log(responseLog);
+        console.log("***** jwtResponse to follow ******")
+        console.log(jwtResponse);
+        console.log(jwtResponse.access_token);
+        if (responseLog.status === 200) {
+            localStorage.setItem("jwt", JSON.stringify("Bearer " + jwtResponse.access_token));
             navigate('/');
-        } else if (responseLog.status === 200 && jwtResponse.role === 'user') {
-            localStorage.setItem("jwt", JSON.stringify(jwtResponse));
-            navigate('/surveys');
-                }        else {
+        }   
+        else {
             alert("Password incorrect");
             event.target.email.value = "";
             event.target.password.value = "";
+            navigate('/login');
         }
     };
     return (

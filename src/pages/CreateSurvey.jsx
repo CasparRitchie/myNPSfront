@@ -55,7 +55,6 @@ const CreateSurvey = () => {
           {/* Render a form element with an onSubmit attribute that references the handleSubmit function */}
                 <form className='submitSurveyForm' onSubmit={handleSubmit}>
                     {/* Render a series of radio buttons for selecting an NPS score */}
-                    {/* <DetractorButton ref={npsScoreRef} value="0"/> */}
                     <label className='container' htmlFor="score0">
                       <input type="radio" id="score0" name="nps_score" value={0} ref={npsScoreRef} className="detractor"/>
                       <span className="checkmark0"></span>
@@ -101,8 +100,8 @@ const CreateSurvey = () => {
                       <span class="checkmark10"></span>
                     </label>
                     {/* Render a label and text input element for entering a comment */}
-                    <label htmlFor="comment"> Comments </label>
-                    <input type="textarea" name="comment" ref={commentRef} />                       
+                    <label htmlFor="comment" className='surveyCommentsLabel'> Comments </label>
+                    <input type="textarea" className='surveyCommentsBox' name="comment" placeholder="Please enter your comments here" ref={commentRef} />                       
                     <button type="submit" className='submitSurvey'>Submit survey</button>
                     {/* <SubmitASurveyButton/> */}
                   </form>
