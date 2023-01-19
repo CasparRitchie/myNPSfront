@@ -40,6 +40,7 @@
 .submitSurvey1:hover {
   background-color: var(--secondaryTextBackground);
   color: var(--secondaryTextColor);
+  scale: 2;
   border: 2px solid var(--secondaryColor);
 }
 
@@ -80,6 +81,8 @@
 
 /* On mouse-over, change the image background  */
 .container:hover input ~ .checkmark0 {
+  scale:1.3;
+  transition: 0.5s;
   background-image: url('../../../images/npsButtons/0\ button\ \(État\ de\ survol\).png');
 }
 
@@ -108,7 +111,8 @@
 
 /* On mouse-over, change the image background  */
 .container:hover input ~ .checkmark1 {
-  // background-color: #ccc;
+  scale:1.3;
+  transition: 0.5s;  
   background-image: url('../../../images/npsButtons/1\ button\ \(État\ de\ survol\).png');
 }
 
@@ -137,6 +141,8 @@
 
 /* On mouse-over, change the image background  */
 .container:hover input ~ .checkmark2 {
+  scale:1.3;
+  transition: 0.5s;
   background-image: url('../../../images/npsButtons/2\ button\ \(État\ de\ survol\).png');
 }
 
@@ -164,6 +170,8 @@
 
 /* On mouse-over, change the image background  */
 .container:hover input ~ .checkmark3 {
+  scale:1.3;
+  transition: 0.5s;
   background-image: url('../../../images/npsButtons/3\ button\ \(État\ de\ survol\).png');
 }
 
@@ -191,6 +199,8 @@
 
 /* On mouse-over, change the image background  */
 .container:hover input ~ .checkmark4 {
+  scale:1.3;
+  transition: 0.5s;
   background-image: url('../../../images/npsButtons/4\ button\ \(État\ de\ survol\).png');
 }
 
@@ -218,6 +228,8 @@
 
 /* On mouse-over, change the image background  */
 .container:hover input ~ .checkmark5 {
+  scale:1.3;
+  transition: 0.5s;
   background-image: url('../../../images/npsButtons/5\ button\ \(État\ de\ survol\).png');
 }
 
@@ -246,6 +258,8 @@
 
 /* On mouse-over, change the image background  */
 .container:hover input ~ .checkmark6 {
+  scale:1.3;
+  transition: 0.5s;
   background-image: url('../../../images/npsButtons/6\ button\ \(État\ de\ survol\).png');
 }
 
@@ -273,6 +287,8 @@
 
 /* On mouse-over, change the image background  */
 .container:hover input ~ .checkmark7 {
+  scale:1.3;
+  transition: 0.5s;
   background-image: url('../../../images/npsButtons/7\ button\ \(État\ de\ survol\).png');
 }
 
@@ -300,6 +316,8 @@
 
 /* On mouse-over, change the image background  */
 .container:hover input ~ .checkmark8 {
+  scale:1.3;
+  transition: 0.5s;
   background-image: url('../../../images/npsButtons/8\ button\ \(État\ de\ survol\).png');
 }
 
@@ -327,6 +345,8 @@
 
 /* On mouse-over, change the image background  */
 .container:hover input ~ .checkmark9 {
+  scale:1.3;
+  transition: 0.5s;
   background-image: url('../../../images/npsButtons/9\ button\ \(État\ de\ survol\).png');
 }
 
@@ -354,6 +374,8 @@
 
 /* On mouse-over, change the image background  */
 .container:hover input ~ .checkmark10 {
+  scale:1.3;
+  transition: 0.5s;
   background-image: url('../../../images/npsButtons/10\ button\ \(État\ de\ survol\).png');
 }
 

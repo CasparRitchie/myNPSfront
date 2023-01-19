@@ -108,7 +108,6 @@ const CreateSurvey = () => {
                     <label htmlFor="comment" className='surveyCommentsLabel'> Comments </label>
                     <input type="textarea" className='surveyCommentsBox' name="comment" placeholder="Please enter your comments here" ref={commentRef} />                       
                     <button type="submit" className='submitSurvey'>Submit survey</button>
-                    {/* <SubmitASurveyButton/> */}
                   </form>
                </section>
             </li>

@@ -18,7 +18,7 @@ const Login = () => {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-                'Authorization': 'Bearer' + localStorage.getItem("jwt"),
+                'Authorization': 'Bearer ' + localStorage.getItem("jwt"),
             },
             body: JSON.stringify({
             email: email,
@@ -29,17 +29,22 @@ const Login = () => {
         console.log(responseLog);
         console.log("***** jwtResponse to follow ******")
         console.log(jwtResponse);
+        // console.log(jwtResponse.role);
         console.log(jwtResponse.access_token);
         if (responseLog.status === 200) {
-            localStorage.setItem("jwt", JSON.stringify("Bearer " + jwtResponse.access_token));
+            localStorage.setItem("jwt", jwtResponse.access_token);
             navigate('/');
-        }   
-        else {
-            alert("Password incorrect");
-            event.target.email.value = "";
-            event.target.password.value = "";
-            navigate('/login');
-        }
+        } 
+        // else if (responseLog.status === 200 ) {
+        //     localStorage.setItem("jwt", JSON.stringify(jwtResponse));
+        //     navigate('/surveys');
+        //         }        
+            else {
+        alert("Password incorrect");
+        event.target.email.value = "";
+        event.target.password.value = "";
+        navigate('/login');
+            }
     };
     return (
         <>
